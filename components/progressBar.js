@@ -5,8 +5,8 @@ class progressBar extends Component {
   constructor(props) {
     super(props);
 
-    const percentageValue = 100 - (this.props.percentage * 100);
-    
+    const percentageValue = (100 - (this.props.percentage * 100)).toFixed(2);
+
     this.state = {percent: percentageValue };
   }
 
