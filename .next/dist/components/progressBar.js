@@ -32,7 +32,7 @@ var _semanticUiReact = require('semantic-ui-react');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = '/Users/nmmenendez/Documents/Dapps/tutorialToken/components/progressBar.js';
+var _jsxFileName = '/Users/nmmenendez/Documents/Dapps/crowdsale-dapp/components/progressBar.js';
 
 
 var progressBar = function (_Component) {
@@ -43,7 +43,7 @@ var progressBar = function (_Component) {
 
     var _this = (0, _possibleConstructorReturn3.default)(this, (progressBar.__proto__ || (0, _getPrototypeOf2.default)(progressBar)).call(this, props));
 
-    var percentageValue = 100 - _this.props.percentage * 100;
+    var percentageValue = (100 - _this.props.percentage * 100).toFixed(2);
 
     _this.state = { percent: percentageValue };
     return _this;
@@ -72,4 +72,4 @@ var progressBar = function (_Component) {
 exports.default = progressBar;
 
 //        <Button onClick={this.increment}>Increment</Button>
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvcHJvZ3Jlc3NCYXIuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJDb21wb25lbnQiLCJQcm9ncmVzcyIsIkJ1dHRvbiIsInByb2dyZXNzQmFyIiwicHJvcHMiLCJwZXJjZW50YWdlVmFsdWUiLCJwZXJjZW50YWdlIiwic3RhdGUiLCJwZXJjZW50Il0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU8sQUFBTzs7OztBQUNkLEFBQVEsQUFBVTs7Ozs7OztJLEFBRVo7dUNBQ0o7O3VCQUFBLEFBQVksT0FBTzt3Q0FBQTs7Z0pBQUEsQUFDWCxBQUVOOztRQUFNLGtCQUFrQixNQUFPLE1BQUEsQUFBSyxNQUFMLEFBQVcsYUFBMUMsQUFBdUQsQUFFdkQ7O1VBQUEsQUFBSyxRQUFRLEVBQUMsU0FMRyxBQUtqQixBQUFhLEFBQVU7V0FDeEI7Ozs7OzZCQUdRLEFBRVA7OzZCQUNFLGNBQUEsU0FBSyxXQUFMLEFBQWU7b0JBQWY7c0JBQUEsQUFDRTtBQURGO09BQUEsa0JBQ0UsQUFBQywyQ0FBVSxTQUFTLEtBQUEsQUFBSyxNQUF6QixBQUErQixTQUFTLFlBQXhDLE1BQW1ELFVBQW5ELEFBQ0E7Y0FEQSxBQUNLO29CQURMO3NCQUZKLEFBQ0UsQUFDRSxBQUtMO0FBTEs7Ozs7OztBQWRrQixBLEFBc0IxQjs7a0JBQUEsQUFBZTs7QUFFZiIsImZpbGUiOiJwcm9ncmVzc0Jhci5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvbm1tZW5lbmRlei9Eb2N1bWVudHMvRGFwcHMvdHV0b3JpYWxUb2tlbiJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvcHJvZ3Jlc3NCYXIuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJDb21wb25lbnQiLCJQcm9ncmVzcyIsIkJ1dHRvbiIsInByb2dyZXNzQmFyIiwicHJvcHMiLCJwZXJjZW50YWdlVmFsdWUiLCJwZXJjZW50YWdlIiwidG9GaXhlZCIsInN0YXRlIiwicGVyY2VudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPLEFBQU87Ozs7QUFDZCxBQUFRLEFBQVU7Ozs7Ozs7SSxBQUVaO3VDQUNKOzt1QkFBQSxBQUFZLE9BQU87d0NBQUE7O2dKQUFBLEFBQ1gsQUFFTjs7UUFBTSxrQkFBa0IsQ0FBQyxNQUFPLE1BQUEsQUFBSyxNQUFMLEFBQVcsYUFBbkIsQUFBZ0MsS0FBaEMsQUFBc0MsUUFBOUQsQUFBd0IsQUFBOEMsQUFFdEU7O1VBQUEsQUFBSyxRQUFRLEVBQUMsU0FMRyxBQUtqQixBQUFhLEFBQVU7V0FDeEI7Ozs7OzZCQUdRLEFBRVA7OzZCQUNFLGNBQUEsU0FBSyxXQUFMLEFBQWU7b0JBQWY7c0JBQUEsQUFDRTtBQURGO09BQUEsa0JBQ0UsQUFBQywyQ0FBVSxTQUFTLEtBQUEsQUFBSyxNQUF6QixBQUErQixTQUFTLFlBQXhDLE1BQW1ELFVBQW5ELEFBQ0E7Y0FEQSxBQUNLO29CQURMO3NCQUZKLEFBQ0UsQUFDRSxBQUtMO0FBTEs7Ozs7OztBQWRrQixBLEFBc0IxQjs7a0JBQUEsQUFBZTs7QUFFZiIsImZpbGUiOiJwcm9ncmVzc0Jhci5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvbm1tZW5lbmRlei9Eb2N1bWVudHMvRGFwcHMvY3Jvd2RzYWxlLWRhcHAifQ==

@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import TutorialToken from '../ethereum/TutorialToken';
 import Crowdsale from '../ethereum/Crowdsale';
 import web3 from '../ethereum/web3';
-import { Header, Button } from 'semantic-ui-react';
+import { Header, Button,Segment} from 'semantic-ui-react';
 import ProgressBar from '../components/progressBar';
 import {Link} from '../routes.js';
 
@@ -15,8 +15,8 @@ class CrowdSaleApp extends Component {
       const tokenName = await TutorialToken.methods.name().call();
       const totalSupply = await TutorialToken.methods.totalSupply().call();
       const remainingTokens = await TutorialToken.methods.balanceOf(Crowdsale.options.address).call();
-
-      return { accounts, tokenName, totalSupply, remainingTokens };
+      const amountRaisedSoFar = await Crowdsale.methods.weiRaised().call();
+      return { accounts, tokenName, totalSupply, remainingTokens,amountRaisedSoFar };
     }
 
 
@@ -29,9 +29,17 @@ class CrowdSaleApp extends Component {
               <h2 className="ui center aligned blue header">ICO Live Now!</h2>
               <div> <ProgressBar percentage={this.props.remainingTokens/this.props.totalSupply} /> </div>
               <div>
-              <h4 className="ui right aligned header"> Remaining tokens:
-              {web3.utils.fromWei(this.props.remainingTokens,'ether')}/
-              {web3.utils.fromWei(this.props.totalSupply,'ether')} </h4>
+                <Segment clearing>
+                  <Header as='h3' floated='right'>
+                  Remaining tokens:
+                  {web3.utils.fromWei(this.props.remainingTokens,'ether')}/
+                  {web3.utils.fromWei(this.props.totalSupply,'ether')}
+                  </Header>
+                  <Header as='h3' floated='left'>
+                  Ether amount raised so far:
+                  {web3.utils.fromWei(this.props.amountRaisedSoFar,'ether') + " eth"}
+                  </Header>
+                </Segment>
               </div>
               <h2 className="ui center aligned header">
                 <Link route="/buytokens">
