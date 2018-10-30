@@ -14,5 +14,6 @@ app.prepare().then(() => {
   createServer(handler).listen(3000, err => {
     if (err) throw err;
     console.log("Ready on localhost:3000");
+    console.log("copyright");
   });
 });
